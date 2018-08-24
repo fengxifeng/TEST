@@ -1,0 +1,21 @@
+server:
+  port: 8764
+  context-path: /eventm
+spring:
+  redis:
+    host: 192.168.2.158
+    port: 6379
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.2.158:3306/VWMA?characterEncoding=utf8
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+       current_session_context_class: org.springframework.orm.hibernate4.SpringSessionContext
+swagger:
+  enable: true
